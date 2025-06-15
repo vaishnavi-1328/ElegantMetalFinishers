@@ -454,14 +454,17 @@ import Footer from '../components/Footer.astro';
 </Layout>
 
 <script>
+  declare var gtag: any; // Declare gtag as a global variable
+
   // Contact form submission
-  const form = document.getElementById('contactForm');
-  const successDiv = document.getElementById('formSuccess');
+  const form = document.getElementById('contactForm') as HTMLFormElement | null;
+  const successDiv = document.getElementById('formSuccess') as HTMLElement | null;
   
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
     
-    const formData = new FormData(form);
+      const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
     
     try {
@@ -481,7 +484,9 @@ import Footer from '../components/Footer.astro';
       
       // Show success message
       form.style.display = 'none';
-      successDiv.classList.remove('hidden');
+      if (successDiv) {
+        successDiv.classList.remove('hidden');
+      }
       
       // Track conversion
       if (typeof gtag !== 'undefined') {
@@ -496,21 +501,24 @@ import Footer from '../components/Footer.astro';
       alert('There was an error submitting your form. Please try again or contact us directly.');
     }
   });
+} // Add missing closing brace for 'if (form)'
   
   // FAQ toggle functionality
   const faqToggles = document.querySelectorAll('.faq-toggle');
   
   faqToggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
-      const content = toggle.nextElementSibling;
-      const icon = toggle.querySelector('svg');
+      const content = toggle.nextElementSibling as HTMLElement | null;
+      const icon = toggle.querySelector('svg') as SVGElement | null;
       
-      if (content.classList.contains('hidden')) {
-        content.classList.remove('hidden');
-        icon.style.transform = 'rotate(180deg)';
-      } else {
-        content.classList.add('hidden');
-        icon.style.transform = 'rotate(0deg)';
+      if (content && icon) { // Ensure content and icon exist
+        if (content.classList.contains('hidden')) {
+          content.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        } else {
+          content.classList.add('hidden');
+          icon.style.transform = 'rotate(0deg)';
+        }
       }
     });
   });
