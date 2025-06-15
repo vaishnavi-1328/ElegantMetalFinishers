@@ -1,0 +1,578 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCTA from '../components/FloatingCTA.astro';
+---
+
+<Layout 
+  title="Services & Processes" 
+  description="Comprehensive metal fabrication services including laser cutting, sheet metal fabrication, metal bending, and custom designs. Advanced equipment and expert craftsmanship."
+  keywords="laser cutting services, sheet metal fabrication, metal bending, custom metal designs, CNC cutting, precision metal work, industrial fabrication"
+>
+  <Navigation />
+  <FloatingCTA />
+  
+  <!-- Breadcrumb -->
+  <div class="bg-slate-100 py-4 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex" aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2">
+          <li><a href="/" class="text-slate-500 hover:text-olive-600">Home</a></li>
+          <li><span class="text-slate-400">/</span></li>
+          <li><span class="text-slate-900 font-medium">Services</span></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
+          Our Services & Processes
+        </h1>
+        <p class="text-xl text-slate-300 max-w-3xl mx-auto animate-slide-up">
+          Comprehensive metal fabrication services with state-of-the-art equipment 
+          and expert craftsmanship. From concept to completion.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Overview -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Laser Cutting -->
+        <div class="bg-white rounded-lg shadow-lg p-8 border border-slate-100 hover:shadow-xl transition-shadow animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-br from-olive-600 to-teal-600 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4">Laser Cutting</h3>
+          <p class="text-slate-600 mb-6">
+            High-precision laser cutting for complex geometries with tolerances up to ±0.1mm. 
+            Suitable for various materials and thicknesses.
+          </p>
+          <ul class="text-slate-600 text-sm space-y-2 mb-6">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-olive-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Thickness: 0.5mm - 25mm
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-olive-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Materials: Steel, Aluminum, Brass
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-olive-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Tolerance: ±0.1mm
+            </li>
+          </ul>
+          <div class="text-olive-600 font-semibold">Starting from ₹50</div>
+        </div>
+        
+        <!-- Sheet Metal Fabrication -->
+        <div class="bg-white rounded-lg shadow-lg p-8 border border-slate-100 hover:shadow-xl transition-shadow animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-br from-teal-600 to-olive-600 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4">Sheet Metal Fabrication</h3>
+          <p class="text-slate-600 mb-6">
+            Complete sheet metal fabrication services including cutting, bending, 
+            welding, and finishing for industrial applications.
+          </p>
+          <ul class="text-slate-600 text-sm space-y-2 mb-6">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Enclosures & Cabinets
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Brackets & Supports
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Custom Assemblies
+            </li>
+          </ul>
+          <div class="text-teal-600 font-semibold">Quote on Request</div>
+        </div>
+        
+        <!-- Metal Bending -->
+        <div class="bg-white rounded-lg shadow-lg p-8 border border-slate-100 hover:shadow-xl transition-shadow animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-br from-olive-600 to-teal-600 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4">Metal Bending</h3>
+          <p class="text-slate-600 mb-6">
+            Precision metal bending services using advanced press brake technology 
+            for accurate angles and consistent results.
+          </p>
+          <ul class="text-slate-600 text-sm space-y-2 mb-6">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-olive-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              CNC Press Brake
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-olive-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Complex Geometries
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-olive-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Tight Tolerances
+            </li>
+          </ul>
+          <div class="text-olive-600 font-semibold">₹100 per bend</div>
+        </div>
+        
+        <!-- Custom Metal Designs -->
+        <div class="bg-white rounded-lg shadow-lg p-8 border border-slate-100 hover:shadow-xl transition-shadow animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-br from-teal-600 to-olive-600 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4">Custom Metal Designs</h3>
+          <p class="text-slate-600 mb-6">
+            Bring your unique vision to life with our custom metal design services. 
+            From concept to completion, we handle every detail.
+          </p>
+          <ul class="text-slate-600 text-sm space-y-2 mb-6">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Design Consultation
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Prototyping
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Production
+            </li>
+          </ul>
+          <div class="text-teal-600 font-semibold">Custom Pricing</div>
+        </div>
+        
+        <!-- CNC Machining -->
+        <div class="bg-white rounded-lg shadow-lg p-8 border border-slate-100 hover:shadow-xl transition-shadow animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-br from-olive-600 to-teal-600 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4">CNC Machining</h3>
+          <p class="text-slate-600 mb-6">
+            Precision CNC machining for complex parts and components with 
+            exceptional accuracy and surface finish.
+          </p>
+          <ul class="text-slate-600 text-sm space-y-2 mb-6">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-olive-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              3-Axis Machining
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-olive-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Turning & Milling
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-olive-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Surface Finishing
+            </li>
+          </ul>
+          <div class="text-olive-600 font-semibold">₹500/hour</div>
+        </div>
+        
+        <!-- Welding Services -->
+        <div class="bg-white rounded-lg shadow-lg p-8 border border-slate-100 hover:shadow-xl transition-shadow animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-br from-teal-600 to-olive-600 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4">Welding Services</h3>
+          <p class="text-slate-600 mb-6">
+            Professional welding services for structural and decorative applications 
+            using various welding techniques and materials.
+          </p>
+          <ul class="text-slate-600 text-sm space-y-2 mb-6">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              TIG & MIG Welding
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Structural Welding
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Certified Welders
+            </li>
+          </ul>
+          <div class="text-teal-600 font-semibold">₹200/joint</div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Interactive Process Flow -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          Our Manufacturing Process
+        </h2>
+        <p class="text-slate-600 text-lg">
+          Step-by-step process ensuring quality and precision in every project
+        </p>
+      </div>
+      
+      <div class="relative">
+        <!-- Process Flow -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+          
+          <!-- Step 1 -->
+          <div class="text-center animate-on-scroll">
+            <div class="relative">
+              <div class="w-20 h-20 bg-gradient-to-br from-olive-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <span class="text-white font-bold text-2xl">1</span>
+              </div>
+              <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-olive-200 -z-10"></div>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">Design Analysis</h3>
+            <p class="text-slate-600 text-sm">Review and optimize your design for manufacturability and cost-effectiveness</p>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="text-center animate-on-scroll">
+            <div class="relative">
+              <div class="w-20 h-20 bg-gradient-to-br from-olive-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <span class="text-white font-bold text-2xl">2</span>
+              </div>
+              <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-olive-200 -z-10"></div>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">Material Selection</h3>
+            <p class="text-slate-600 text-sm">Choose the right materials based on application requirements and specifications</p>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="text-center animate-on-scroll">
+            <div class="relative">
+              <div class="w-20 h-20 bg-gradient-to-br from-olive-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <span class="text-white font-bold text-2xl">3</span>
+              </div>
+              <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-olive-200 -z-10"></div>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">Precision Cutting</h3>
+            <p class="text-slate-600 text-sm">Execute cutting operations using state-of-the-art laser and CNC equipment</p>
+          </div>
+          
+          <!-- Step 4 -->
+          <div class="text-center animate-on-scroll">
+            <div class="relative">
+              <div class="w-20 h-20 bg-gradient-to-br from-olive-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <span class="text-white font-bold text-2xl">4</span>
+              </div>
+              <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-olive-200 -z-10"></div>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">Quality Control</h3>
+            <p class="text-slate-600 text-sm">Rigorous inspection and testing to ensure all specifications are met</p>
+          </div>
+          
+          <!-- Step 5 -->
+          <div class="text-center animate-on-scroll">
+            <div class="w-20 h-20 bg-gradient-to-br from-olive-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <span class="text-white font-bold text-2xl">5</span>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">Delivery</h3>
+            <p class="text-slate-600 text-sm">Careful packaging and timely delivery with complete documentation</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Equipment Specifications -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          State-of-the-Art Equipment
+        </h2>
+        <p class="text-slate-600 text-lg">
+          Advanced machinery ensuring precision and efficiency in every operation
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Laser Cutting Machine -->
+        <div class="bg-gradient-to-br from-olive-50 to-teal-50 rounded-lg p-6 animate-on-scroll">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-olive-600 rounded-lg flex items-center justify-center mr-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-900">Fiber Laser Cutter</h3>
+          </div>
+          <ul class="text-slate-600 text-sm space-y-2">
+            <li>• Power: 3000W Fiber Laser</li>
+            <li>• Cutting Area: 3000 x 1500mm</li>
+            <li>• Max Thickness: 25mm Steel</li>
+            <li>• Precision: ±0.1mm</li>
+            <li>• Speed: Up to 35m/min</li>
+          </ul>
+        </div>
+        
+        <!-- Press Brake -->
+        <div class="bg-gradient-to-br from-teal-50 to-olive-50 rounded-lg p-6 animate-on-scroll">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center mr-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-900">CNC Press Brake</h3>
+          </div>
+          <ul class="text-slate-600 text-sm space-y-2">
+            <li>• Capacity: 100 Ton</li>
+            <li>• Bending Length: 3200mm</li>
+            <li>• Back Gauge: CNC Controlled</li>
+            <li>• Angle Accuracy: ±0.5°</li>
+            <li>• Tooling: Quick Change System</li>
+          </ul>
+        </div>
+        
+        <!-- CNC Machine -->
+        <div class="bg-gradient-to-br from-olive-50 to-teal-50 rounded-lg p-6 animate-on-scroll">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-olive-600 rounded-lg flex items-center justify-center mr-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-900">CNC Machining Center</h3>
+          </div>
+          <ul class="text-slate-600 text-sm space-y-2">
+            <li>• Axes: 3-Axis Vertical</li>
+            <li>• Spindle Speed: 12,000 RPM</li>
+            <li>• Tool Changer: 24 Position</li>
+            <li>• Work Area: 800 x 500 x 500mm</li>
+            <li>• Precision: ±0.005mm</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Material Options -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          Material Options
+        </h2>
+        <p class="text-slate-600 text-lg">
+          Wide range of materials to suit your specific application requirements
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Steel -->
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-slate-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">Fe</span>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">Steel</h3>
+          <p class="text-slate-600 text-sm mb-4">Mild Steel, Stainless Steel, Tool Steel</p>
+          <div class="text-xs text-slate-500">
+            <div>Thickness: 0.5mm - 25mm</div>
+            <div>Grades: MS, SS304, SS316</div>
+          </div>
+        </div>
+        
+        <!-- Aluminum -->
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-olive-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">Al</span>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">Aluminum</h3>
+          <p class="text-slate-600 text-sm mb-4">6061, 6063, 5052 Alloys</p>
+          <div class="text-xs text-slate-500">
+            <div>Thickness: 0.5mm - 20mm</div>
+            <div>Finish: Anodized, Powder Coated</div>
+          </div>
+        </div>
+        
+        <!-- Brass -->
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">Br</span>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">Brass</h3>
+          <p class="text-slate-600 text-sm mb-4">C360, C260 Brass Alloys</p>
+          <div class="text-xs text-slate-500">
+            <div>Thickness: 0.5mm - 15mm</div>
+            <div>Applications: Decorative, Electrical</div>
+          </div>
+        </div>
+        
+        <!-- Copper -->
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">Cu</span>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">Copper</h3>
+          <p class="text-slate-600 text-sm mb-4">Pure Copper, Copper Alloys</p>
+          <div class="text-xs text-slate-500">
+            <div>Thickness: 0.5mm - 12mm</div>
+            <div>Applications: Electrical, Heat Transfer</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pricing Information -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          Transparent Pricing
+        </h2>
+        <p class="text-slate-600 text-lg">
+          Competitive rates with no hidden costs. Get started from just ₹50
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Basic Package -->
+        <div class="bg-white border-2 border-slate-200 rounded-lg p-8 text-center animate-on-scroll">
+          <h3 class="text-xl font-semibold text-slate-900 mb-4">Basic Cutting</h3>
+          <div class="text-3xl font-bold text-olive-600 mb-2">₹50</div>
+          <p class="text-slate-600 mb-6">Starting price per piece</p>
+          <ul class="text-slate-600 text-sm space-y-2 mb-8">
+            <li>• Simple geometries</li>
+            <li>• Standard materials</li>
+            <li>• Basic finishing</li>
+            <li>• 48-hour delivery</li>
+          </ul>
+          <a href="/contact" class="block bg-olive-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-olive-700 transition-colors">
+            Get Quote
+          </a>
+        </div>
+        
+        <!-- Professional Package -->
+        <div class="bg-gradient-to-br from-olive-600 to-teal-600 text-white rounded-lg p-8 text-center transform scale-105 animate-on-scroll">
+          <h3 class="text-xl font-semibold mb-4">Professional</h3>
+          <div class="text-3xl font-bold mb-2">₹150</div>
+          <p class="text-olive-100 mb-6">Average price per piece</p>
+          <ul class="text-olive-100 text-sm space-y-2 mb-8">
+            <li>• Complex geometries</li>
+            <li>• Premium materials</li>
+            <li>• Advanced finishing</li>
+            <li>• 24-hour delivery</li>
+            <li>• Quality certification</li>
+          </ul>
+          <a href="/contact" class="block bg-white text-olive-600 py-3 px-6 rounded-lg font-semibold hover:bg-olive-50 transition-colors">
+            Get Quote
+          </a>
+        </div>
+        
+        <!-- Enterprise Package -->
+        <div class="bg-white border-2 border-slate-200 rounded-lg p-8 text-center animate-on-scroll">
+          <h3 class="text-xl font-semibold text-slate-900 mb-4">Enterprise</h3>
+          <div class="text-3xl font-bold text-teal-600 mb-2">Custom</div>
+          <p class="text-slate-600 mb-6">Volume pricing available</p>
+          <ul class="text-slate-600 text-sm space-y-2 mb-8">
+            <li>• Large volume orders</li>
+            <li>• Custom specifications</li>
+            <li>• Dedicated support</li>
+            <li>• Express delivery</li>
+            <li>• Extended warranty</li>
+          </ul>
+          <a href="/contact" class="block bg-teal-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-teal-700 transition-colors">
+            Contact Sales
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Call to Action -->
+  <section class="py-20 bg-gradient-to-r from-olive-600 to-teal-600 text-white">
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Ready to Get Started?
+      </h2>
+      <p class="text-xl mb-8 text-olive-100">
+        Contact us today for a free consultation and custom quote for your project.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="bg-white text-olive-600 px-8 py-4 rounded-lg font-semibold hover:bg-olive-50 transition-colors">
+          Get Your Quote
+        </a>
+        <a href="/work" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-olive-600 transition-colors">
+          View Our Work
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>

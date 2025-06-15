@@ -1,0 +1,403 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCTA from '../components/FloatingCTA.astro';
+---
+
+<Layout 
+  title="Our Work" 
+  description="Explore our portfolio of precision laser cutting, sheet metal fabrication, and custom metal design projects. Quality craftsmanship in every piece."
+  keywords="metal fabrication portfolio, laser cutting examples, sheet metal projects, custom metal designs, precision cutting gallery, industrial metal work"
+>
+  <Navigation />
+  <FloatingCTA />
+  
+  <!-- Breadcrumb -->
+  <div class="bg-slate-100 py-4 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex" aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2">
+          <li><a href="/" class="text-slate-500 hover:text-olive-600">Home</a></li>
+          <li><span class="text-slate-400">/</span></li>
+          <li><span class="text-slate-900 font-medium">Our Work</span></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
+          Our Work Portfolio
+        </h1>
+        <p class="text-xl text-slate-300 max-w-3xl mx-auto animate-slide-up">
+          Discover the precision and artistry in every piece we create. 
+          From concept to completion, excellence in every detail.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Filter Tabs -->
+  <section class="py-8 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="filter-btn active px-6 py-3 rounded-full bg-olive-600 text-white hover:bg-olive-700 transition-colors" data-filter="all">
+          All Projects
+        </button>
+        <button class="filter-btn px-6 py-3 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-filter="laser-cutting">
+          Laser Cutting
+        </button>
+        <button class="filter-btn px-6 py-3 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-filter="sheet-metal">
+          Sheet Metal
+        </button>
+        <button class="filter-btn px-6 py-3 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-filter="custom-design">
+          Custom Design
+        </button>
+        <button class="filter-btn px-6 py-3 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-filter="industrial">
+          Industrial
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Portfolio Grid -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+        
+        <!-- Project 1 -->
+        <div class="portfolio-item group cursor-pointer" data-category="laser-cutting">
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Precision Automotive Parts"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-semibold mb-2">Precision Automotive Parts</h3>
+                <p class="text-sm text-white/90">High-precision laser cutting for automotive components with 0.1mm tolerance.</p>
+                <div class="flex items-center mt-2">
+                  <span class="bg-olive-600 text-xs px-2 py-1 rounded">Laser Cutting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="portfolio-item group cursor-pointer" data-category="sheet-metal">
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Industrial Enclosures"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-semibold mb-2">Industrial Enclosures</h3>
+                <p class="text-sm text-white/90">Custom sheet metal enclosures for electrical and electronic equipment.</p>
+                <div class="flex items-center mt-2">
+                  <span class="bg-teal-600 text-xs px-2 py-1 rounded">Sheet Metal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="portfolio-item group cursor-pointer" data-category="custom-design">
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Architectural Elements"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-semibold mb-2">Architectural Elements</h3>
+                <p class="text-sm text-white/90">Custom decorative metal elements for modern architectural projects.</p>
+                <div class="flex items-center mt-2">
+                  <span class="bg-olive-600 text-xs px-2 py-1 rounded">Custom Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="portfolio-item group cursor-pointer" data-category="industrial">
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Heavy Machinery Components"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-semibold mb-2">Heavy Machinery Components</h3>
+                <p class="text-sm text-white/90">Large-scale industrial components for construction and mining equipment.</p>
+                <div class="flex items-center mt-2">
+                  <span class="bg-slate-600 text-xs px-2 py-1 rounded">Industrial</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 5 -->
+        <div class="portfolio-item group cursor-pointer" data-category="laser-cutting">
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Decorative Panels"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-semibold mb-2">Decorative Panels</h3>
+                <p class="text-sm text-white/90">Intricate laser-cut decorative panels for interior design applications.</p>
+                <div class="flex items-center mt-2">
+                  <span class="bg-olive-600 text-xs px-2 py-1 rounded">Laser Cutting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 6 -->
+        <div class="portfolio-item group cursor-pointer" data-category="sheet-metal">
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Kitchen Equipment"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-semibold mb-2">Commercial Kitchen Equipment</h3>
+                <p class="text-sm text-white/90">Stainless steel fabrication for commercial kitchen equipment and fixtures.</p>
+                <div class="flex items-center mt-2">
+                  <span class="bg-teal-600 text-xs px-2 py-1 rounded">Sheet Metal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 7 -->
+        <div class="portfolio-item group cursor-pointer" data-category="custom-design">
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Artistic Sculptures"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-semibold mb-2">Artistic Sculptures</h3>
+                <p class="text-sm text-white/90">Custom metal sculptures and artistic installations for public spaces.</p>
+                <div class="flex items-center mt-2">
+                  <span class="bg-olive-600 text-xs px-2 py-1 rounded">Custom Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 8 -->
+        <div class="portfolio-item group cursor-pointer" data-category="industrial">
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Conveyor Systems"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-semibold mb-2">Conveyor Systems</h3>
+                <p class="text-sm text-white/90">Precision-fabricated components for industrial conveyor and automation systems.</p>
+                <div class="flex items-center mt-2">
+                  <span class="bg-slate-600 text-xs px-2 py-1 rounded">Industrial</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 9 -->
+        <div class="portfolio-item group cursor-pointer" data-category="laser-cutting">
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Electronics Chassis"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-semibold mb-2">Electronics Chassis</h3>
+                <p class="text-sm text-white/90">Precision laser-cut chassis for electronic equipment and devices.</p>
+                <div class="flex items-center mt-2">
+                  <span class="bg-olive-600 text-xs px-2 py-1 rounded">Laser Cutting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Load More Button -->
+      <div class="text-center mt-12">
+        <button class="bg-olive-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-olive-700 transition-colors">
+          Load More Projects
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Process Overview -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          Our Quality Process
+        </h2>
+        <p class="text-slate-600 text-lg">
+          Every project follows our rigorous quality assurance process
+        </p>
+      </div>
+      
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Step 1 -->
+        <div class="text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-br from-olive-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">Design Review</h3>
+          <p class="text-slate-600 text-sm">Thorough analysis and optimization of your design for manufacturability</p>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-br from-olive-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">Precision Cutting</h3>
+          <p class="text-slate-600 text-sm">State-of-the-art machinery ensures accurate cuts every time</p>
+        </div>
+        
+        <!-- Step 3 -->
+        <div class="text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-br from-olive-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">Quality Control</h3>
+          <p class="text-slate-600 text-sm">Rigorous inspection and testing before delivery</p>
+        </div>
+        
+        <!-- Step 4 -->
+        <div class="text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-br from-olive-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-900 mb-2">Delivery</h3>
+          <p class="text-slate-600 text-sm">Timely delivery with complete documentation and support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Call to Action -->
+  <section class="py-20 bg-gradient-to-r from-olive-600 to-teal-600 text-white">
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Ready to Start Your Project?
+      </h2>
+      <p class="text-xl mb-8 text-olive-100">
+        Let's discuss how we can bring your vision to life with precision and quality.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="bg-white text-olive-600 px-8 py-4 rounded-lg font-semibold hover:bg-olive-50 transition-colors">
+          Get Your Quote
+        </a>
+        <a href="/services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-olive-600 transition-colors">
+          Our Services
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>
+
+<script>
+  // Portfolio filtering
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      
+      // Update active button
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active', 'bg-olive-600', 'text-white');
+        btn.classList.add('bg-slate-100', 'text-slate-700');
+      });
+      button.classList.add('active', 'bg-olive-600', 'text-white');
+      button.classList.remove('bg-slate-100', 'text-slate-700');
+      
+      // Filter portfolio items
+      portfolioItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          item.style.display = 'block';
+          item.classList.add('animate-fade-in');
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+  
+  // Lazy loading for images
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.classList.remove('opacity-0');
+        img.classList.add('opacity-100');
+        observer.unobserve(img);
+      }
+    });
+  });
+  
+  document.querySelectorAll('img[data-src]').forEach(img => {
+    imageObserver.observe(img);
+  });
+</script>
