@@ -3,6 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import FloatingCTA from '../components/FloatingCTA.astro';
+
+import automotivePartsImg from '../assets/automotive parts.jpg';
+import industrySparePartsImg from '../assets/industry_spare_parts.jpeg';
 ---
 
 <Layout 
@@ -73,7 +76,7 @@ import FloatingCTA from '../components/FloatingCTA.astro';
         <div class="portfolio-item group cursor-pointer" data-category="laser-cutting">
           <div class="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="src/assets/automotive parts.jpg"
+              src={automotivePartsImg.src}
               alt="Precision Automotive Parts"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
@@ -94,7 +97,7 @@ import FloatingCTA from '../components/FloatingCTA.astro';
         <div class="portfolio-item group cursor-pointer" data-category="sheet-metal">
           <div class="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="src/assets/industry_spare_parts.jpeg"
+              src={industrySparePartsImg.src}
               alt="Industrial Enclosures"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
@@ -374,11 +377,13 @@ import FloatingCTA from '../components/FloatingCTA.astro';
       // Filter portfolio items
       portfolioItems.forEach(item => {
         const category = item.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
-          item.style.display = 'block';
-          item.classList.add('animate-fade-in');
-        } else {
-          item.style.display = 'none';
+        if (item instanceof HTMLElement) { // Check if item is an HTMLElement
+          if (filter === 'all' || category === filter) {
+            item.style.display = 'block';
+            item.classList.add('animate-fade-in');
+          } else {
+            item.style.display = 'none';
+          }
         }
       });
     });
@@ -388,8 +393,10 @@ import FloatingCTA from '../components/FloatingCTA.astro';
   const imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const img = entry.target;
-        img.src = img.dataset.src;
+        const img = entry.target as HTMLImageElement; // Assert img as HTMLImageElement
+        if (img.dataset.src) { // Check if dataset.src exists
+          img.src = img.dataset.src;
+        }
         img.classList.remove('opacity-0');
         img.classList.add('opacity-100');
         observer.unobserve(img);
@@ -398,6 +405,8 @@ import FloatingCTA from '../components/FloatingCTA.astro';
   });
   
   document.querySelectorAll('img[data-src]').forEach(img => {
-    imageObserver.observe(img);
+    if (img instanceof HTMLImageElement) { // Check if img is an HTMLImageElement
+      imageObserver.observe(img);
+    }
   });
 </script>
