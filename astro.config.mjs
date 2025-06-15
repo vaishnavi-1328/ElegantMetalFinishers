@@ -4,6 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 
 export default defineConfig({
+  root: '.', // Explicitly set project root
   site: 'https://elegantmetalfinishers.com',
   integrations: [
     tailwind(),
