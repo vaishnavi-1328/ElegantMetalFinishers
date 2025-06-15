@@ -6,6 +6,16 @@ import FloatingCTA from '../components/FloatingCTA.astro';
 
 import automotivePartsImg from '../assets/automotive parts.jpg';
 import industrySparePartsImg from '../assets/industry_spare_parts.jpeg';
+import architecturalImg from '../assets/facade_design.jpeg';
+import elevationImg from 'src/assets/Elevation design.jpeg';
+import gatedesign from 'src/assets/gate_design1.jpeg';
+import wal_deco from 'src/assets/Wall_deco.jpeg';
+import scultpture from 'src/assets/scultpture.png'
+import interior_gates from 'src/assets/interior_gate.jpeg';
+import name_plate from "src/assets/name_plate.jpeg";
+import interior_design from 'src/assets/buddha_design.jpeg';
+import community_design from 'src/assets/communityHallDesign.jpeg';
+
 ---
 
 <Layout 
@@ -118,7 +128,7 @@ import industrySparePartsImg from '../assets/industry_spare_parts.jpeg';
         <div class="portfolio-item group cursor-pointer" data-category="custom-design">
           <div class="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src=""
+              src={architecturalImg.src}
               alt="Architectural Elements"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
@@ -139,15 +149,15 @@ import industrySparePartsImg from '../assets/industry_spare_parts.jpeg';
         <div class="portfolio-item group cursor-pointer" data-category="industrial">
           <div class="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-              alt="Heavy Machinery Components"
+              src={interior_design.src}
+              alt="Interior designs"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="absolute bottom-4 left-4 right-4 text-white">
                 <h3 class="text-lg font-semibold mb-2">Heavy Machinery Components</h3>
-                <p class="text-sm text-white/90">Large-scale industrial components for construction and mining equipment.</p>
+                <p class="text-sm text-white/90">Beautiful interior designs to elevate your premium presense</p>
                 <div class="flex items-center mt-2">
                   <span class="bg-slate-600 text-xs px-2 py-1 rounded">Industrial</span>
                 </div>
@@ -160,7 +170,7 @@ import industrySparePartsImg from '../assets/industry_spare_parts.jpeg';
         <div class="portfolio-item group cursor-pointer" data-category="laser-cutting">
           <div class="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              src={community_design.src}
               alt="Decorative Panels"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
@@ -168,7 +178,7 @@ import industrySparePartsImg from '../assets/industry_spare_parts.jpeg';
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="absolute bottom-4 left-4 right-4 text-white">
                 <h3 class="text-lg font-semibold mb-2">Decorative Panels</h3>
-                <p class="text-sm text-white/90">Intricate laser-cut decorative panels for interior design applications.</p>
+                <p class="text-sm text-white/90">Intricate laser-cut decorative panels for community halls and large scale decor</p>
                 <div class="flex items-center mt-2">
                   <span class="bg-olive-600 text-xs px-2 py-1 rounded">Laser Cutting</span>
                 </div>
@@ -181,15 +191,15 @@ import industrySparePartsImg from '../assets/industry_spare_parts.jpeg';
         <div class="portfolio-item group cursor-pointer" data-category="sheet-metal">
           <div class="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-              alt="Kitchen Equipment"
+            src={gatedesign.src}
+              alt="Exterior Gates"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="absolute bottom-4 left-4 right-4 text-white">
-                <h3 class="text-lg font-semibold mb-2">Commercial Kitchen Equipment</h3>
-                <p class="text-sm text-white/90">Stainless steel fabrication for commercial kitchen equipment and fixtures.</p>
+                <h3 class="text-lg font-semibold mb-2">Gate Designs</h3>
+                <p class="text-sm text-white/90">Secure your house beautifully with custom, inticate designs</p>
                 <div class="flex items-center mt-2">
                   <span class="bg-teal-600 text-xs px-2 py-1 rounded">Sheet Metal</span>
                 </div>
@@ -202,8 +212,8 @@ import industrySparePartsImg from '../assets/industry_spare_parts.jpeg';
         <div class="portfolio-item group cursor-pointer" data-category="custom-design">
           <div class="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-              alt="Artistic Sculptures"
+              src={name_plate.src}
+              alt="Name plate"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
             />
@@ -223,15 +233,15 @@ import industrySparePartsImg from '../assets/industry_spare_parts.jpeg';
         <div class="portfolio-item group cursor-pointer" data-category="industrial">
           <div class="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-              alt="Conveyor Systems"
+              src={scultpture.src}
+              alt="Innovative sculptures"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="absolute bottom-4 left-4 right-4 text-white">
                 <h3 class="text-lg font-semibold mb-2">Conveyor Systems</h3>
-                <p class="text-sm text-white/90">Precision-fabricated components for industrial conveyor and automation systems.</p>
+                <p class="text-sm text-white/90">Precision-fabricated components for innoate sheet metal sculptures </p>
                 <div class="flex items-center mt-2">
                   <span class="bg-slate-600 text-xs px-2 py-1 rounded">Industrial</span>
                 </div>
@@ -244,15 +254,15 @@ import industrySparePartsImg from '../assets/industry_spare_parts.jpeg';
         <div class="portfolio-item group cursor-pointer" data-category="laser-cutting">
           <div class="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-              alt="Electronics Chassis"
+              src={interior_gates.src}
+              alt="interior_gate"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="absolute bottom-4 left-4 right-4 text-white">
-                <h3 class="text-lg font-semibold mb-2">Electronics Chassis</h3>
-                <p class="text-sm text-white/90">Precision laser-cut chassis for electronic equipment and devices.</p>
+                <h3 class="text-lg font-semibold mb-2">Interior Gate</h3>
+                <p class="text-sm text-white/90">Precision laser-cut chassis for interior gates, door designs, etc</p>
                 <div class="flex items-center mt-2">
                   <span class="bg-olive-600 text-xs px-2 py-1 rounded">Laser Cutting</span>
                 </div>
