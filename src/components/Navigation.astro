@@ -1,4 +1,5 @@
 ---
+import logoImage from '../assets/logo1.jpg';
 const currentPath = Astro.url.pathname;
 ---
 
@@ -8,9 +9,7 @@ const currentPath = Astro.url.pathname;
       <!-- Logo -->
       <div class="flex-shrink-0">
         <a href="/" class="flex items-center">
-          <div class="w-12 h-12 bg-gradient-to-br from-olive-600 to-teal-600 rounded-lg flex items-center justify-center shadow-lg">
-            <span class="text-white font-bold text-xl">EMF</span>
-          </div>
+          <img src={logoImage.src} alt="Elegant Metal Finishers Logo" class="w-12 h-12 rounded-lg shadow-lg object-contain" />
           <span class="ml-3 text-xl font-bold text-gray-900">Elegant Metal Finishers</span>
         </a>
       </div>
