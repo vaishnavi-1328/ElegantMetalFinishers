@@ -1,7 +1,7 @@
 services:
-  - type: static_site
+  - type: web
     name: elegant-metal-finishers
-    env: static
+    runtime: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     headers:
@@ -11,3 +11,12 @@ services:
       - path: /assets/*
         name: Cache-Control
         value: public, max-age=31536000, immutable # Cache assets for a long time
+    # Astro generates specific HTML files for each page (e.g., index.html, about/index.html, 404.html).
+    # Render's static hosting typically handles serving these correctly without explicit rewrite rules
+    # for all paths to index.html, which is more common for Single Page Applications.
+    # If you have specific routing needs or client-side routing, you can add 'routes' here.
+    # Example for SPA-like behavior (usually not needed for standard Astro sites):
+    # routes:
+    #   - type: rewrite
+    #     source: "/*"
+    #     destination: /index.html
