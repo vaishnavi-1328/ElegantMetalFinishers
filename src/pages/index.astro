@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import FloatingCTA from '../components/FloatingCTA.astro';
 import LeadForm from '../components/LeadForm.astro';
+import heroVideo from '../assets/WhatsApp Video 2025-06-14 at 21.29.11.mp4';
 ---
 
 <Layout title="Home">
@@ -22,7 +23,7 @@ import LeadForm from '../components/LeadForm.astro';
         class="w-full h-full object-cover"
         poster="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
       >
-        <source src="src/assets/WhatsApp Video 2025-06-14 at 21.29.11.mp4" type="video/mp4">
+        <source src={heroVideo} type="video/mp4">
         <!-- Fallback image -->
         <img src="https://images.pexels.com/photos/162568/office-home-house-desk-162568.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Metal cutting process" class="w-full h-full object-cover">
       </video>
