@@ -1,4 +1,5 @@
 ---
+import logoImage from '../assets/logo1.jpg';
 ---
 
 <footer class="bg-slate-900 text-white">
@@ -6,12 +7,12 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <!-- Company Info -->
       <div class="col-span-1 md:col-span-2">
-        <div class="flex items-center mb-4">
-          <div class="w-10 h-10 bg-gradient-to-br from-olive-600 to-teal-600 rounded-lg flex items-center justify-center">
-            <span class="text-white font-bold text-xl">EMF</span>
-          </div>
-          <span class="ml-3 text-xl font-bold">Elegant Metal Finishers</span>
-        </div>
+        <div class="flex-shrink-0">
+        <a href="/" class="flex items-center">
+          <img src={logoImage.src} alt="Elegant Metal Finishers Logo" class="w-12 h-12 rounded-lg shadow-lg object-contain" />
+          <span class="ml-3 text-xl font-bold text-slate-300">Elegant Metal Finishers</span>
+        </a>
+      </div>
         <p class="text-slate-300 mb-4 max-w-md">
           Leading provider of precision laser cutting, sheet metal fabrication, and custom metal designs. 
           Quality craftsmanship meets cutting-edge technology.
