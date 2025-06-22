@@ -17,19 +17,19 @@ const currentPath = Astro.url.pathname;
       <!-- Desktop Navigation -->
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-4">
-          <a href="/" class={`px-4 py-2 text-sm font-medium transition-all duration-300 ${currentPath === '/' ? 'text-olive-400 border-b-2 border-olive-400' : 'text-gray-900 hover:text-olive-400'}`}>
+          <a href="/" class={`px-4 py-2 text-sm font-medium transition-all duration-300 ${currentPath === '/' ? 'text-[#D34E4E] border-b-2 border-[#D34E4E]' : 'text-gray-900 hover:text-[#D34E4E]'}`}>
             Home
           </a>
-          <a href="/about" class={`px-4 py-2 text-sm font-medium transition-all duration-300 ${currentPath === '/about' ? 'text-olive-400 border-b-2 border-olive-400' : 'text-gray-900 hover:text-olive-400'}`}>
+          <a href="/about" class={`px-4 py-2 text-sm font-medium transition-all duration-300 ${currentPath === '/about' ? 'text-[#D34E4E] border-b-2 border-[#D34E4E]' : 'text-gray-900 hover:text-[#D34E4E]'}`}>
             About Us
           </a>
-          <a href="/work" class={`px-4 py-2 text-sm font-medium transition-all duration-300 ${currentPath === '/work' ? 'text-olive-400 border-b-2 border-olive-400' : 'text-gray-900 hover:text-olive-400'}`}>
+          <a href="/work" class={`px-4 py-2 text-sm font-medium transition-all duration-300 ${currentPath === '/work' ? 'text-[#D34E4E] border-b-2 border-[#D34E4E]' : 'text-gray-900 hover:text-[#D34E4E]'}`}>
             Our Work
           </a>
-          <a href="/services" class={`px-4 py-2 text-sm font-medium transition-all duration-300 ${currentPath === '/services' ? 'text-olive-400 border-b-2 border-olive-400' : 'text-gray-900 hover:text-olive-400'}`}>
+          <a href="/services" class={`px-4 py-2 text-sm font-medium transition-all duration-300 ${currentPath === '/services' ? 'text-[#D34E4E] border-b-2 border-[#D34E4E]' : 'text-gray-900 hover:text-[#D34E4E]'}`}>
             Services
           </a>
-          <a href="/contact" class="bg-gradient-to-r from-olive-600 to-teal-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:from-olive-700 hover:to-teal-700 transition-all duration-300 shadow-lg ml-4">
+          <a href="/contact" class="bg-gradient-to-r from-[#81272A] to-[#B73237] text-white px-6 py-2 rounded-lg text-sm font-medium hover:from-[#B73237] hover:to-[#D34E4E] transition-all duration-300 shadow-lg ml-4">
             Contact Us
           </a>
         </div>
@@ -37,7 +37,7 @@ const currentPath = Astro.url.pathname;
       
       <!-- Mobile menu button -->
       <div class="md:hidden">
-        <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-olive-400 hover:bg-gray-100 transition-colors">
+        <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-[#D34E4E] hover:bg-gray-100 transition-colors">
           <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
@@ -49,19 +49,19 @@ const currentPath = Astro.url.pathname;
   <!-- Mobile menu -->
   <div class="mobile-menu hidden md:hidden">
     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-800/95 backdrop-blur-md border-t border-white/10">
-      <a href="/" class={`block px-3 py-2 text-base font-medium transition-colors ${currentPath === '/' ? 'text-olive-400 bg-olive-400/10' : 'text-gray-900 hover:text-olive-400 hover:bg-gray-100'}`}>
+      <a href="/" class={`block px-3 py-2 text-base font-medium transition-colors ${currentPath === '/' ? 'text-[#D34E4E] bg-[#D34E4E]/10' : 'text-gray-900 hover:text-[#D34E4E] hover:bg-gray-100'}`}>
         Home
       </a>
-      <a href="/about" class={`block px-3 py-2 text-base font-medium transition-colors ${currentPath === '/about' ? 'text-olive-400 bg-olive-400/10' : 'text-gray-900 hover:text-olive-400 hover:bg-gray-100'}`}>
+      <a href="/about" class={`block px-3 py-2 text-base font-medium transition-colors ${currentPath === '/about' ? 'text-[#D34E4E] bg-[#D34E4E]/10' : 'text-gray-900 hover:text-[#D34E4E] hover:bg-gray-100'}`}>
         About Us
       </a>
-      <a href="/work" class={`block px-3 py-2 text-base font-medium transition-colors ${currentPath === '/work' ? 'text-olive-400 bg-olive-400/10' : 'text-gray-900 hover:text-olive-400 hover:bg-gray-100'}`}>
+      <a href="/work" class={`block px-3 py-2 text-base font-medium transition-colors ${currentPath === '/work' ? 'text-[#D34E4E] bg-[#D34E4E]/10' : 'text-gray-900 hover:text-[#D34E4E] hover:bg-gray-100'}`}>
         Our Work
       </a>
-      <a href="/services" class={`block px-3 py-2 text-base font-medium transition-colors ${currentPath === '/services' ? 'text-olive-400 bg-olive-400/10' : 'text-gray-900 hover:text-olive-400 hover:bg-gray-100'}`}>
+      <a href="/services" class={`block px-3 py-2 text-base font-medium transition-colors ${currentPath === '/services' ? 'text-[#D34E4E] bg-[#D34E4E]/10' : 'text-gray-900 hover:text-[#D34E4E] hover:bg-gray-100'}`}>
         Services
       </a>
-      <a href="/contact" class="block px-3 py-2 text-base font-medium bg-gradient-to-r from-olive-600 to-teal-600 text-white rounded-lg hover:from-olive-700 hover:to-teal-700 transition-colors">
+      <a href="/contact" class="block px-3 py-2 text-base font-medium bg-gradient-to-r from-[#81272A] to-[#B73237] text-white rounded-lg hover:from-[#B73237] hover:to-[#D34E4E] transition-colors">
         Contact Us
       </a>
     </div>
@@ -98,11 +98,11 @@ const currentPath = Astro.url.pathname;
   if (navbar) {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
-        navbar.classList.add('bg-slate-800/90');
-        navbar.classList.remove('bg-gray-100');
+        navbar.classList.add('bg-slate-300/90');
+        navbar.classList.remove('bg-gray-50');
       } else {
-        navbar.classList.remove('bg-slate-800/90');
-        navbar.classList.add('bg-gray-100');
+        navbar.classList.remove('bg-slate-300/90');
+        navbar.classList.add('bg-gray-50');
       }
     });
   }
